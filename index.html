@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+  <title>Alfredo's Pizza Cafe</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <a href="#"><img class="logo" src="assets/img/Pizza-logo-design-template-Vector-PNG.png" alt="pizza logo"></a>
+      <button class="hamburger"></button>
+      <ul class="nav-list">
+        <li><a href="#sobre" onclick="remove()">Sobre</a></li>
+        <li><a href="#salgadas" onclick="remove()">Pizzas salgadas</a></li>
+        <li><a href="#doces" onclick="remove()">Pizzas doces</a></li>
+        <li><a href="#cadastro" onclick="remove()">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+
+    <h1>Alfredo's Pizza Cafe</h1>
+
+    <section id="sobre" class="sobre padrao">
+      <h2>Sobre</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa sint libero rem nisi quia tempore consectetur,
+        aperiam ipsum? Quas eaque quaerat aspernatur distinctio suscipit quibusdam qui exercitationem eligendi quia
+        nulla!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa sint libero rem nisi quia tempore consectetur,
+        aperiam ipsum? Quas eaque quaerat aspernatur distinctio suscipit quibusdam qui exercitationem eligendi quia
+        nulla!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa sint libero rem nisi quia tempore consectetur,
+        aperiam ipsum? Quas eaque quaerat aspernatur distinctio suscipit quibusdam qui exercitationem eligendi quia
+        nulla!</p>
+    </section>
+
+    <section id="salgadas" class="salagadas padrao">
+      <h2>Pizzas salgadas</h2>
+      <table>
+        <tr>
+          <td rowspan="2"><img class="img-cardapio" src="assets/img/calabresa.png" alt="pizza de calabresa"></td>
+          <td class="titulo">CALABRESA</td>
+          <td rowspan="2">R$59,90</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><img class="img-cardapio" src="assets/img/marguerita.png" alt="pizza de marguerita"></td>
+          <td class="titulo">MARGUERITA</td>
+          <td rowspan="2">R$59,90</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><img class="img-cardapio" src="assets/img/frango com catupiry.png"
+              alt="pizza de frango com catupiry"></td>
+          <td class="titulo">FRANGO COM CATUPIRY</td>
+          <td rowspan="2">R$59,90</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><img class="img-cardapio" src="assets/img/portuguesa.png" alt="pizza de portuguesa"></td>
+          <td class="titulo">PORTUGUESA</td>
+          <td rowspan="2">R$59,90</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="doces" class="doces padrao">
+      <h2>Pizzas doces</h2>
+      <table>
+        <tr>
+          <td rowspan="2"><img class="img-cardapio" src="assets/img/mem.webp" alt="pizza de m&m"></td>
+          <td class="titulo">M&M</td>
+          <td rowspan="2">R$49,90</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><img class="img-cardapio" src="assets/img/sensacao.webp" alt="pizza de sensacao"></td>
+          <td class="titulo">SENSACAO</td>
+          <td rowspan="2">R$59,90</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="cadastro" class="cadastro padrao">
+      <h2>Cadastro</h2>
+      <form action="https://652e8e4f0b8d8ddac0b19830.mockapi.io/cadastro" method="post">
+        <label for="nome">Insira seu nome completo:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Nome completo"><br>
+        <label for="phone">Insira seu numero de celular:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="(00) 0000-0000"><br>
+        <label for="date">Insira sua data de nascimento:</label><br>
+        <input type="date" id="date" name="date"><br>
+        <label for="user">Insira seu usuario:</label><br>
+        <input type="text" id="user" name="user" placeholder="Usuario"><br>
+        <label for="password">Insira sua senha:</label><br>
+        <input type="password" id="senha" name="senha" placeholder="senha"><br>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+  <div id="btn-top">
+    <i class="arrow up"></i>
+  </div>
+  <footer>
+    <p>Desenvolvido por <a href="https://github.com/HaralanS" target="_blank" rel="noopener">Haralan Santana</a></p>
+  </footer>
+
+</body>
+
+</html>
